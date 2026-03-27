@@ -53,7 +53,8 @@ Dynamically loads the CSV file, cleans the headers, and sets up datetime indexin
 ## 📉 3. Statistical Summary
 Leverages the custom `dfmath` module to crunch the dataset and format peak highs, lowest dips, averages, and standard deviations.
 ![Statistical Summary](screenshots/sc2.png)
-*(Further exploration metrics shown in [screenshots/sc3.png](screenshots/sc3.png))*
+Further exploration metrics shown in 
+![screenshots/sc3.png](screenshots/sc3.png)
 
 ## 🗂️ 4. Data Filtering & Appending Live Data
 Filters trading days based on user-defined minimum closing price thresholds. Users can seamlessly append fresh daily data to the CSV and reload the DataFrame.
@@ -74,7 +75,7 @@ Gracefully terminates the program and closes all running loops.
 
 # ▶️ How to Run the Project Locally
 
-```bash
+
 # 1. Clone the repository
 git clone <your-repo-link>
 cd BTC_Trend_Tracker
