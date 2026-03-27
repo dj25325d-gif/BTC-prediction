@@ -1,0 +1,1 @@
+[2026-03-27 13:39:06] avg: 55901.11218061165, current: nan, predict: sell (going down)
