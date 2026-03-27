@@ -26,7 +26,15 @@ Instead of just writing isolated scripts, this project brings everything togethe
 
 ---
 
+<<<<<<< HEAD
 ## 📊 Generated Charts
+=======
+## 📉 3. Statistical Summary
+Leverages the custom `dfmath` module to crunch the dataset and format peak highs, lowest dips, averages, and standard deviations.
+![Statistical Summary](screenshots/sc2.png)
+Further exploration metrics shown in 
+![screenshots/sc3.png](screenshots/sc3.png)
+>>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
 
 ### 📈 Revenue by Category
 
@@ -40,6 +48,7 @@ Instead of just writing isolated scripts, this project brings everything togethe
 
 ## 🚀 Key Features
 
+<<<<<<< HEAD
 | Feature            | What it Does                        |
 | ------------------ | ----------------------------------- |
 | 📂 Load Dataset    | Import CSV files into memory        |
@@ -207,6 +216,10 @@ Save generated charts directly into the `charts/` folder.
 ## ▶️ How to Run
 
 ```bash id="7trh3a"
+=======
+
+# 1. Clone the repository
+>>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
 git clone <your-repo-link>
 cd project
 pip install pandas matplotlib seaborn
@@ -231,6 +244,7 @@ It’s not just coding — it’s solving real problems with data.
 
 ## 🔮 Future Improvements
 
+<<<<<<< HEAD
 * Build a Streamlit dashboard (live UI)
 * Export reports to PDF/Excel
 * Add machine learning predictions
@@ -250,3 +264,7 @@ This project is open source and free to use.
 “Data tells a story — your job is to make it clear, meaningful, and impossible to ignore.”
 
 ---
+=======
+📜 License
+This project is open-source and available under the MIT License. Feel free to use and modify it for your own learning!
+>>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
