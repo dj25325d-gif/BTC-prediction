@@ -1,118 +1,252 @@
-# 📈 BTC Prediction & Trend Tracker (Python CLI)
+# 📊 Data Analysis & Visualization Toolkit (Python CLI)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Library-Pandas-yellow)
-![Matplotlib](https://img.shields.io/badge/Visualization-Matplotlib-blue)
-![Seaborn](https://img.shields.io/badge/Visualization-Seaborn-teal)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-teal)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-> **Pro Tip for your GitHub:** Record a 10-second GIF of you navigating the main menu using a free tool like *ScreenToGif* or *Terminalizer*, and replace this quote block with `![CLI Demo](screenshots/demo.gif)`!
+---
+
+## 📌 Project Overview
+
+This project is a command-line **Data Analysis & Visualization Toolkit** built using Python.
+
+The idea behind this project was to simulate how a real data analyst works — starting from loading raw data, exploring it, cleaning it, performing transformations, and finally visualizing insights.
+
+Instead of just writing isolated scripts, this project brings everything together into one interactive workflow.
 
 ---
 
-# 📌 Project Overview
+## 🎬 Demo
 
-This project is a **Bitcoin Prediction & Trend Tracker** built entirely in Python. Designed as a comprehensive capstone project, it demonstrates a complete Object-Oriented Programming (OOP) workflow combined with a custom-built Python package.
+### 🏠 Main Menu
 
-It simulates a real-world **financial data analyst workflow**, allowing users to dynamically load cryptocurrency datasets, perform statistical transformations, predict short-term market trends using historical moving averages, and generate visual reports. 
-
----
-
-# ⚙️ Key Features & Skills Demonstrated
-
-| Feature | Description | Skills Highlighted |
-| :--- | :--- | :--- |
-| **📦 Custom Python Package** | Abstracted logic into custom `dfmath`, `displaydata`, and `charts` modules. | Modular Design, DRY Principles, Abstraction |
-| **🔄 Interactive CLI Menu** | Loop-based menu utilizing Python 3.10+ `match...case` and safe input validation. | Error Handling (`try/except`), UX Design |
-| **🧮 Statistical Engine** | Calculates moving averages, standard deviations, and trading volume distributions. | NumPy, Statistical Analysis |
-| **📊 Real-Time Appending** | Users can log new daily market data that instantly updates the DataFrame in memory. | Pandas, File Handling (Append Mode) |
-| **🤖 Trend Prediction** | Algorithmic comparison of current prices vs. historical averages to generate Buy/Sell signals. | Algorithmic Logic, Persistent Logging |
-
----
-
-# 📊 Generated Charts
-
-## 📈 Historical Price Trends
-![Line Chart](charts/line_chart.png)
-
-## 📉 Trading Volume vs. Closing Price
-![Scatter Chart](charts/scatter_chart.png)
-
----
-
-# 🎬 Application Walkthrough
-
-## 🏠 1. Interactive Main Menu
-The application is driven by a clean command-line interface with robust error handling to prevent crashes from invalid user keystrokes.
 ![Main Menu](screenshots/mainmenu.png)
 
-## 🔍 2. Data Loading & Exploration
-Dynamically loads the CSV file, cleans the headers, and sets up datetime indexing for time-series analysis.
-![Data Exploration](screenshots/sc1.png)
+---
 
-## 📉 3. Statistical Summary
-Leverages the custom `dfmath` module to crunch the dataset and format peak highs, lowest dips, averages, and standard deviations.
-![Statistical Summary](screenshots/sc2.png)
-*(Further exploration metrics shown in [screenshots/sc3.png](screenshots/sc3.png))*
+## 📊 Generated Charts
 
-## 🗂️ 4. Data Filtering & Appending Live Data
-Filters trading days based on user-defined minimum closing price thresholds. Users can seamlessly append fresh daily data to the CSV and reload the DataFrame.
-**Filtering Data:**
-![Data Filtering](screenshots/sc4.png)
-**Appending Data:**
-![Appending Data](screenshots/sc5.png)
+### 📈 Revenue by Category
 
-## 🔮 5. Trend Prediction Engine
-Evaluates current prices against historical moving averages to generate actionable insights. Every prediction is timestamped and saved to a persistent text log (`Prediction_Report.txt`).
-![Prediction Engine](screenshots/sc6.png)
+![Revenue by Category](charts/revenue_by_category.png)
 
-## 🚪 6. Safe Exit
-Gracefully terminates the program and closes all running loops.
-![Exit Program](screenshots/exit.png)
+### 📉 Revenue vs Profit
+
+![Revenue vs Profit](charts/revenue_vs_profit.png)
 
 ---
 
-# ▶️ How to Run the Project Locally
+## 🚀 Key Features
 
-```bash
-# 1. Clone the repository
+| Feature            | What it Does                        |
+| ------------------ | ----------------------------------- |
+| 📂 Load Dataset    | Import CSV files into memory        |
+| 🔍 Explore Data    | View rows, columns, types, and info |
+| 🧮 Data Operations | Filter, sort, group, and pivot data |
+| 🧹 Data Cleaning   | Handle missing values efficiently   |
+| 📊 Statistics      | Generate descriptive summaries      |
+| 📈 Visualization   | Create multiple chart types         |
+| 💾 Save Charts     | Export plots for reporting          |
+
+---
+
+## 🧠 Skills Demonstrated
+
+* Data Analysis using **Pandas**
+* Data Cleaning techniques
+* Data Visualization with **Matplotlib & Seaborn**
+* Exploratory Data Analysis (EDA)
+* CLI Application Design
+* Data Aggregation & Transformation
+
+---
+
+## 🧭 Program Flow (How it Works)
+
+````mermaid
+flowchart TD
+A[Start Program] --> B[Main Menu]
+B --> C[Load Dataset]
+B --> D[Explore Data]
+B --> E[DataFrame Operations]
+B --> F[Handle Missing Data]
+B --> G[Generate Statistics]
+B --> H[Data Visualization]
+B --> I[Save Visualization]
+B --> J[Exit]
+``` id="9u0d4y"
+
+---
+
+## 🧩 Project Structure
+
+``` id="c2f5s8"
+project/
+│
+├── Python_Visualizer.py
+├── enhanced_dashboard_data.csv
+│
+├── charts/
+│   ├── revenue_by_category.png
+│   ├── revenue_vs_profit.png
+│
+├── screenshots/
+│   ├── mainmenu.png
+│   ├── opt1.png
+│   ├── opt2.png
+│   ├── opt3.png
+│   ├── opt4.png
+│   ├── opt5.png
+│   ├── opt6.png
+│   ├── opt6-7.png
+│   ├── opt7.png
+│   └── opt8.png
+│
+└── README.md
+````
+
+---
+
+## 🖥️ Application Walkthrough
+
+---
+
+### 1️⃣ Load Dataset
+
+![Load Dataset](screenshots/opt1.png)
+
+Loads a CSV file into memory so all operations can be performed on it.
+
+---
+
+### 2️⃣ Explore Data
+
+![Explore Data](screenshots/opt2.png)
+
+Quickly inspect:
+
+* First & last rows
+* Column names
+* Data types
+* Dataset info
+
+---
+
+### 3️⃣ Perform DataFrame Operations
+
+![Operations](screenshots/opt3.png)
+
+Includes:
+
+* Mathematical calculations
+* Filtering data
+* Sorting values
+* GroupBy aggregations
+* Pivot tables
+
+---
+
+### 4️⃣ Handle Missing Data
+
+![Cleaning](screenshots/opt4.png)
+
+Options include:
+
+* Viewing missing values
+* Filling with mean
+* Dropping rows
+* Replacing values
+
+---
+
+### 5️⃣ Generate Descriptive Statistics
+
+![Statistics](screenshots/opt5.png)
+
+Uses `.describe()` to give a quick statistical summary of the dataset.
+
+---
+
+### 6️⃣ Data Visualization
+
+#### Example 1 (Bar Plot)
+
+![Visualization](screenshots/opt6.png)
+
+#### Example 2 (Scatter Plot)
+
+![Visualization](screenshots/opt6-7.png)
+
+Supports:
+
+* Bar charts
+* Line plots
+* Scatter plots
+* Pie charts
+* Histograms
+* Stack plots
+
+---
+
+### 7️⃣ Save Visualization
+
+![Save Plot](screenshots/opt7.png)
+
+Save generated charts directly into the `charts/` folder.
+
+---
+
+### 8️⃣ Exit Program
+
+![Exit](screenshots/opt8.png)
+
+---
+
+## ▶️ How to Run
+
+```bash id="7trh3a"
 git clone <your-repo-link>
-cd BTC_Trend_Tracker
-
-# 2. Install required dependencies
+cd project
 pip install pandas matplotlib seaborn
+python Python_Visualizer.py
+```
 
-# 3. Run the application
-python main.py
+---
 
-(When prompted in the main menu, type btc5Year_Data.csv to load the dataset and begin your analysis.)
+## 💼 Why This Project Matters
 
-📁 Architecture & File Structure
-Plaintext
-/BTC_Trend_Tracker
-│── main.py                  # Core application loop and OOP logic
-│── btc5Year_Data.csv        # Primary historical dataset
-│── Prediction_Report.txt    # Auto-generated log of past trend predictions
-│
-├── /screenshots             # UI documentation and demo images
-├── /charts                  # Saved Matplotlib/Seaborn visualization outputs
-│
-└── /package                 # Custom user-defined module directory
-    │── __init__.py          # Package initializer
-    │── dfmath.py            # Abstracted mathematical operations
-    │── displaydata.py       # Pandas DataFrame inspection logic
-    └── charts.py            # Seaborn/Matplotlib rendering functions
-💼 Portfolio Value
-This project was built to demonstrate a complete data analysis pipeline and software engineering lifecycle. It showcases the ability to move beyond basic linear scripts into building modular, interactive, and user-friendly data applications.
+This project shows a **complete data workflow**, which is exactly what recruiters look for:
 
-This repository highlights core competencies relevant for Data Analyst, Entry-Level Data Scientist, and Python Developer roles.
+* Loading real datasets
+* Cleaning messy data
+* Performing analysis
+* Creating visual insights
+* Exporting results
 
-🔮 Future Improvements
-🌐 Web Integration: Transition the CLI into a Streamlit web dashboard.
+It’s not just coding — it’s solving real problems with data.
 
-🧠 Machine Learning: Implement Scikit-Learn Linear Regression for advanced predictive modeling.
+---
 
-🔌 Live API Integration: Connect to Binance or CoinGecko APIs to automatically fetch daily market data instead of manual entry.
+## 🔮 Future Improvements
 
-📜 License
-This project is open-source and available under the MIT License. Feel free to use and modify it for your own learning!
+* Build a Streamlit dashboard (live UI)
+* Export reports to PDF/Excel
+* Add machine learning predictions
+* Add interactive filtering
+* Deploy as a web app
+
+---
+
+## 📜 License
+
+This project is open source and free to use.
+
+---
+
+## 💬 Final Thought
+
+“Data tells a story — your job is to make it clear, meaningful, and impossible to ignore.”
+
+---
