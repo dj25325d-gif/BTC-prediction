@@ -1,4 +1,4 @@
-# 📊 Data Analysis & Visualization Toolkit (Python CLI)
+# 📊 Bitcoin Price Analysis & Visualization (Python CLI)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellow)
@@ -10,11 +10,9 @@
 
 ## 📌 Project Overview
 
-This project is a command-line **Data Analysis & Visualization Toolkit** built using Python.
+This project is a command-line **Bitcoin Data Analysis & Visualization tool** built using Python.
 
-The idea behind this project was to simulate how a real data analyst works — starting from loading raw data, exploring it, cleaning it, performing transformations, and finally visualizing insights.
-
-Instead of just writing isolated scripts, this project brings everything together into one interactive workflow.
+It focuses on analyzing historical Bitcoin data and generating meaningful insights through visualizations. The goal was to simulate a real-world data analysis workflow — from loading data to exploring trends and relationships.
 
 ---
 
@@ -26,80 +24,72 @@ Instead of just writing isolated scripts, this project brings everything togethe
 
 ---
 
-<<<<<<< HEAD
 ## 📊 Generated Charts
-=======
-## 📉 3. Statistical Summary
-Leverages the custom `dfmath` module to crunch the dataset and format peak highs, lowest dips, averages, and standard deviations.
-![Statistical Summary](screenshots/sc2.png)
-Further exploration metrics shown in 
-![screenshots/sc3.png](screenshots/sc3.png)
->>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
 
-### 📈 Revenue by Category
+### 📈 Bitcoin Closing Price Over Time
 
-![Revenue by Category](charts/revenue_by_category.png)
+![Line Chart](charts/line_chart.png)
 
-### 📉 Revenue vs Profit
+---
 
-![Revenue vs Profit](charts/revenue_vs_profit.png)
+### 📉 Volume vs Closing Price (Scatter Plot)
+
+![Scatter Chart](charts/scatter_chart.png)
 
 ---
 
 ## 🚀 Key Features
 
-<<<<<<< HEAD
-| Feature            | What it Does                        |
-| ------------------ | ----------------------------------- |
-| 📂 Load Dataset    | Import CSV files into memory        |
-| 🔍 Explore Data    | View rows, columns, types, and info |
-| 🧮 Data Operations | Filter, sort, group, and pivot data |
-| 🧹 Data Cleaning   | Handle missing values efficiently   |
-| 📊 Statistics      | Generate descriptive summaries      |
-| 📈 Visualization   | Create multiple chart types         |
-| 💾 Save Charts     | Export plots for reporting          |
+| Feature            | What it Does                                |
+| ------------------ | ------------------------------------------- |
+| 📂 Load Dataset    | Load Bitcoin CSV dataset                    |
+| 🔍 Explore Data    | Inspect rows, columns, and data types       |
+| 🧮 Data Operations | Perform filtering, sorting, and aggregation |
+| 🧹 Data Cleaning   | Handle missing values                       |
+| 📊 Statistics      | Generate descriptive statistics             |
+| 📈 Visualization   | Create charts like line & scatter plots     |
+| 💾 Save Charts     | Save generated plots                        |
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-* Data Analysis using **Pandas**
-* Data Cleaning techniques
-* Data Visualization with **Matplotlib & Seaborn**
+* Data Analysis using Pandas
+* Data Visualization using Matplotlib & Seaborn
 * Exploratory Data Analysis (EDA)
+* Data Cleaning Techniques
 * CLI Application Design
-* Data Aggregation & Transformation
 
 ---
 
-## 🧭 Program Flow (How it Works)
+## 🧭 Program Flow
 
-````mermaid
+```mermaid
 flowchart TD
-A[Start Program] --> B[Main Menu]
+A[Start] --> B[Main Menu]
 B --> C[Load Dataset]
 B --> D[Explore Data]
-B --> E[DataFrame Operations]
-B --> F[Handle Missing Data]
-B --> G[Generate Statistics]
-B --> H[Data Visualization]
-B --> I[Save Visualization]
+B --> E[Data Operations]
+B --> F[Clean Data]
+B --> G[Statistics]
+B --> H[Visualization]
+B --> I[Save Plot]
 B --> J[Exit]
-``` id="9u0d4y"
+```
 
 ---
 
 ## 🧩 Project Structure
 
-``` id="c2f5s8"
+```
 project/
 │
 ├── Python_Visualizer.py
 ├── enhanced_dashboard_data.csv
 │
 ├── charts/
-│   ├── revenue_by_category.png
-│   ├── revenue_vs_profit.png
+│   ├── line_chart.png
+│   ├── scatter_chart.png
 │
 ├── screenshots/
 │   ├── mainmenu.png
@@ -111,22 +101,18 @@ project/
 │   ├── opt6.png
 │   ├── opt6-7.png
 │   ├── opt7.png
-│   └── opt8.png
+│   ├── opt8.png
 │
 └── README.md
-````
+```
 
 ---
 
 ## 🖥️ Application Walkthrough
 
----
-
 ### 1️⃣ Load Dataset
 
 ![Load Dataset](screenshots/opt1.png)
-
-Loads a CSV file into memory so all operations can be performed on it.
 
 ---
 
@@ -134,26 +120,11 @@ Loads a CSV file into memory so all operations can be performed on it.
 
 ![Explore Data](screenshots/opt2.png)
 
-Quickly inspect:
-
-* First & last rows
-* Column names
-* Data types
-* Dataset info
-
 ---
 
-### 3️⃣ Perform DataFrame Operations
+### 3️⃣ DataFrame Operations
 
 ![Operations](screenshots/opt3.png)
-
-Includes:
-
-* Mathematical calculations
-* Filtering data
-* Sorting values
-* GroupBy aggregations
-* Pivot tables
 
 ---
 
@@ -161,53 +132,27 @@ Includes:
 
 ![Cleaning](screenshots/opt4.png)
 
-Options include:
-
-* Viewing missing values
-* Filling with mean
-* Dropping rows
-* Replacing values
-
 ---
 
-### 5️⃣ Generate Descriptive Statistics
+### 5️⃣ Generate Statistics
 
 ![Statistics](screenshots/opt5.png)
-
-Uses `.describe()` to give a quick statistical summary of the dataset.
 
 ---
 
 ### 6️⃣ Data Visualization
 
-#### Example 1 (Bar Plot)
-
 ![Visualization](screenshots/opt6.png)
-
-#### Example 2 (Scatter Plot)
-
-![Visualization](screenshots/opt6-7.png)
-
-Supports:
-
-* Bar charts
-* Line plots
-* Scatter plots
-* Pie charts
-* Histograms
-* Stack plots
 
 ---
 
 ### 7️⃣ Save Visualization
 
-![Save Plot](screenshots/opt7.png)
-
-Save generated charts directly into the `charts/` folder.
+![Save](screenshots/opt7.png)
 
 ---
 
-### 8️⃣ Exit Program
+### 8️⃣ Exit
 
 ![Exit](screenshots/opt8.png)
 
@@ -215,11 +160,7 @@ Save generated charts directly into the `charts/` folder.
 
 ## ▶️ How to Run
 
-```bash id="7trh3a"
-=======
-
-# 1. Clone the repository
->>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
+```bash
 git clone <your-repo-link>
 cd project
 pip install pandas matplotlib seaborn
@@ -230,26 +171,23 @@ python Python_Visualizer.py
 
 ## 💼 Why This Project Matters
 
-This project shows a **complete data workflow**, which is exactly what recruiters look for:
+This project demonstrates a full data analysis pipeline:
 
-* Loading real datasets
-* Cleaning messy data
+* Loading real-world datasets
+* Cleaning and transforming data
 * Performing analysis
-* Creating visual insights
-* Exporting results
+* Visualizing insights
 
-It’s not just coding — it’s solving real problems with data.
+These are core skills used in **Data Analyst and Data Science roles**.
 
 ---
 
 ## 🔮 Future Improvements
 
-<<<<<<< HEAD
-* Build a Streamlit dashboard (live UI)
-* Export reports to PDF/Excel
-* Add machine learning predictions
-* Add interactive filtering
-* Deploy as a web app
+* Add real-time Bitcoin API data
+* Build a Streamlit dashboard
+* Add predictive modeling
+* Improve UI/UX
 
 ---
 
@@ -259,12 +197,12 @@ This project is open source and free to use.
 
 ---
 
-## 💬 Final Thought
+## 👤 Author
 
-“Data tells a story — your job is to make it clear, meaningful, and impossible to ignore.”
+Developed by Dash
 
 ---
-=======
-📜 License
-This project is open-source and available under the MIT License. Feel free to use and modify it for your own learning!
->>>>>>> 9bdce6681277aed9548d195e52d0dd350359c2b7
+
+## 💬 Final Thought
+
+“Data is not just numbers — it’s a story waiting to be told.”
